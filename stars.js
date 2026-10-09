@@ -19,7 +19,7 @@ function renderTimeline(){
   const detail=document.createElement("small");detail.textContent=i<idx?"✓ Achieved at "+r.stars.toLocaleString()+" stars":i===idx?"⭐ Current rank • "+r.stars.toLocaleString()+" stars required":(r.stars-n).toLocaleString()+" more stars needed • "+r.stars.toLocaleString()+" total";
   info.append(name,detail);row.append(dot,info);track.append(row);
  });
- const fill=dialog.querySelector(".rank-timeline-fill");fill.style.height=Math.min(100,100*n/max)+"%";
+ const fill=dialog.querySelector(".rank-timeline-fill");const nextRank=ranks[idx+1];const fraction=nextRank?Math.min(1,(n-ranks[idx].stars)/(nextRank.stars-ranks[idx].stars)):0;const trackHeight=track.offsetHeight;const firstDot=track.children[1]?.offsetTop||0;const lastDot=track.lastElementChild?.offsetTop||trackHeight;const currentDot=track.children[idx+1]?.offsetTop||firstDot;const nextDot=track.children[idx+2]?.offsetTop||currentDot;const reached=Math.min(lastDot,currentDot+(nextDot-currentDot)*fraction);fill.style.height=Math.max(0,reached-firstDot+22)+"px";
  // Distribute decorative white stars along the earned yellow portion of the path.
  fill.replaceChildren();const count=Math.max(1,Math.min(24,Math.floor(n/Math.max(1,max/24))));
  for(let i=0;i<count;i++){const star=document.createElement("span");star.className="rank-fill-star";star.textContent="★";star.style.top=((i+.5)/count*100)+"%";fill.append(star)}
