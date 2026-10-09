@@ -1,0 +1,89 @@
+{
+  "ranks": [
+    {
+      "name": "Recruit",
+      "stars": 0,
+      "icon": "🎖️"
+    },
+    {
+      "name": "Private",
+      "stars": 5,
+      "icon": "🪖"
+    },
+    {
+      "name": "Lance Corporal",
+      "stars": 15,
+      "icon": "🥉"
+    },
+    {
+      "name": "Corporal",
+      "stars": 30,
+      "icon": "🥉"
+    },
+    {
+      "name": "Sergeant",
+      "stars": 50,
+      "icon": "🥈"
+    },
+    {
+      "name": "Staff Sergeant",
+      "stars": 80,
+      "icon": "🥈"
+    },
+    {
+      "name": "Warrant Officer",
+      "stars": 120,
+      "icon": "🏅"
+    },
+    {
+      "name": "Second Lieutenant",
+      "stars": 170,
+      "icon": "🏅"
+    },
+    {
+      "name": "Lieutenant",
+      "stars": 230,
+      "icon": "🥇"
+    },
+    {
+      "name": "Captain",
+      "stars": 310,
+      "icon": "🥇"
+    },
+    {
+      "name": "Major",
+      "stars": 410,
+      "icon": "🌟"
+    },
+    {
+      "name": "Lieutenant Colonel",
+      "stars": 540,
+      "icon": "🌟"
+    },
+    {
+      "name": "Colonel",
+      "stars": 700,
+      "icon": "⭐"
+    },
+    {
+      "name": "Brigadier",
+      "stars": 900,
+      "icon": "⭐⭐"
+    },
+    {
+      "name": "Major General",
+      "stars": 1150,
+      "icon": "⭐⭐"
+    },
+    {
+      "name": "Lieutenant General",
+      "stars": 1450,
+      "icon": "⭐⭐⭐"
+    },
+    {
+      "name": "General",
+      "stars": 1800,
+      "icon": "👑"
+    }
+  ]
+}
