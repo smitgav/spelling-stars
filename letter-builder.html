@@ -9,7 +9,8 @@ let lists={};
 const $=id=>document.getElementById(id);let current="",selected=[],letters=[],answered=false,stars=0,tried=0,seen=[],timers=[],challengeDeadline=0,challengeFinished=false,roundWords=[],roundResults=[],roundList="";
 function populateLists(){Object.keys(lists).forEach(name=>{const o=document.createElement("option");o.value=name;o.textContent=name;$("list").append(o)});}
 function clearTimers(){timers.forEach(clearTimeout);timers=[];challengeDeadline=0}
-function speak(){if(!current||!("speechSynthesis" in window))return;speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(current);u.lang="en-GB";u.rate=.75;speechSynthesis.speak(u)}
+function bestBritishVoice(){const voices=speechSynthesis.getVoices();const british=voices.filter(v=>/^en[-_]GB$/i.test(v.lang));const candidates=british.length?british:voices.filter(v=>/^en/i.test(v.lang));const score=v=>{const name=v.name.toLowerCase();return (/natural|neural|premium|enhanced|serena|daniel|kate|siri|google uk|microsoft.*online/.test(name)?10:0)+(v.localService?1:0)};return candidates.sort((a,b)=>score(b)-score(a))[0]||null}
+function speak(){if(!current||!("speechSynthesis" in window))return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(current);u.lang="en-GB";u.rate=.85;u.pitch=1;const voice=bestBritishVoice();if(voice)u.voice=voice;speechSynthesis.speak(u)}
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
 function start(){
  clearTimers();
