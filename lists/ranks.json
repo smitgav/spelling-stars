@@ -7,82 +7,82 @@
     },
     {
       "name": "Private",
-      "stars": 5,
+      "stars": 20,
       "icon": "🪖"
     },
     {
       "name": "Lance Corporal",
-      "stars": 15,
+      "stars": 40,
       "icon": "🥉"
     },
     {
       "name": "Corporal",
-      "stars": 30,
+      "stars": 100,
       "icon": "🥉"
     },
     {
       "name": "Sergeant",
-      "stars": 50,
+      "stars": 200,
       "icon": "🥈"
     },
     {
       "name": "Staff Sergeant",
-      "stars": 80,
+      "stars": 400,
       "icon": "🥈"
     },
     {
       "name": "Warrant Officer",
-      "stars": 120,
+      "stars": 750,
       "icon": "🏅"
     },
     {
       "name": "Second Lieutenant",
-      "stars": 170,
+      "stars": 1000,
       "icon": "🏅"
     },
     {
       "name": "Lieutenant",
-      "stars": 230,
+      "stars": 1200,
       "icon": "🥇"
     },
     {
       "name": "Captain",
-      "stars": 310,
+      "stars": 1400,
       "icon": "🥇"
     },
     {
       "name": "Major",
-      "stars": 410,
+      "stars": 1500,
       "icon": "🌟"
     },
     {
       "name": "Lieutenant Colonel",
-      "stars": 540,
+      "stars": 1750
       "icon": "🌟"
     },
     {
       "name": "Colonel",
-      "stars": 700,
+      "stars":2000,
       "icon": "⭐"
     },
     {
       "name": "Brigadier",
-      "stars": 900,
+      "stars": 2200,
       "icon": "⭐⭐"
     },
     {
       "name": "Major General",
-      "stars": 1150,
+      "stars": 2500,
       "icon": "⭐⭐"
     },
     {
       "name": "Lieutenant General",
-      "stars": 1450,
+      "stars": 3000,
       "icon": "⭐⭐⭐"
     },
     {
       "name": "General",
-      "stars": 1800,
+      "stars": 4000,
       "icon": "👑"
     }
   ]
