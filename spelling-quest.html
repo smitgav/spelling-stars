@@ -71,4 +71,4 @@ function draw(t){const sky=ctx.createLinearGradient(0,0,0,370);sky.addColorStop(
 function loop(t){const dt=Math.min(2,(t-last)/16.67||1);last=t;update(dt);draw(t);requestAnimationFrame(loop)}requestAnimationFrame(loop);
 $('begin').onclick=start;$('gateCheck').onclick=check;$('gateUndo').onclick=()=>{if(!locked)return;gateSelected.pop();$('gateStatus').textContent='';renderGate()};$('gateSpeak').onclick=speak;$('gateDialog').addEventListener('cancel',e=>e.preventDefault());$('again').onclick=()=>{$('winDialog').close();start()};window.addEventListener('pagehide',()=>{clearTimeout(finishTimer);if('speechSynthesis' in window)speechSynthesis.cancel()});if(typeof loadSpellingLists==='function')loadSpellingLists().then(r=>{lists={quest:fallback,...r.lists};populate()}).catch(()=>{});window.addEventListener('spelling-lists-refreshed',e=>{lists={quest:fallback,...e.detail.lists};populate()});
 })();
-</script></body></html>
+</script><script src="friendly-list-picker.js?v=1"></script></body></html>
