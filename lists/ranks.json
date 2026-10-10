@@ -62,7 +62,7 @@
     },
     {
       "name": "Colonel",
-      "stars":2000,
+      "stars": 2000,
       "icon": "⭐"
     },
     {
@@ -85,5 +85,33 @@
       "stars": 4000,
       "icon": "👑"
     }
-  ]
+  ],
+  "rank_paths": {
+    "scouts": {
+      "label": "UK Scouts (Scouting-inspired)",
+      "country": "uk",
+      "icon": "⚜️",
+      "note": "A fun progression inspired by UK Scouts sections and awards, not official Scouts ranks.",
+      "names": [
+        "Squirrel Scout",
+        "Beaver Scout",
+        "Beaver Explorer",
+        "Cubs New Starter",
+        "Cub Scout",
+        "Cub Adventurer",
+        "Cub Sixer",
+        "Scout New Starter",
+        "Scout",
+        "Scout Patrol Member",
+        "Scout Patrol Leader",
+        "Scout Adventurer",
+        "Scout Chief Scout's Gold Award",
+        "Explorer Scout",
+        "Explorer Adventurer",
+        "Explorer Young Leader",
+        "Explorer Queen's Scout Award",
+        "Scout Network"
+      ]
+    }
+  }
 }
