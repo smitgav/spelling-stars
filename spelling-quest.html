@@ -48,7 +48,7 @@
 <p id="gateStatus" role="status" aria-live="polite"></p>
 <p class="hint">Green = correct position · Red = try another letter. Keep going!</p>
 </dialog><dialog id="winDialog"><div class="win">🏆</div><h2>Treasure found!</h2><p id="winText">Amazing spelling!</p><button id="again">🔁 Play again</button><p><a href="index.html">← All games</a></p></dialog>
-</main><script src="spelling-lists.js"></script><script src="stars.js?v=rankpicker2"></script>
+</main><script src="spelling-lists.js"></script><script src="stars.js?v=scouts1"></script>
 <script>
 (()=>{'use strict';
 const $=id=>document.getElementById(id),canvas=$('platform'),ctx=canvas.getContext('2d'),fallback=['adventure','treasure','mysterious','brilliant','journey','courage','explore','magical','discover','victory'];let gateLetters=[],gateSelected=[];let lists={quest:fallback},words=[],step=0,earned=0,playing=false,paused=false,locked=false,finishTimer=null,last=0,scroll=0;const keys={left:false,right:false};const hero={x:50,y:280,vy:0,grounded:true},gates=[650,1300,1950,2600,3250,3900],pits=[430,1040,1690,2340,2990,3640],coins=Array.from({length:24},(_,i)=>({x:140+i*165,y:i%3===0?230:290,got:false}));const world=4100;const PREF_KEY='school-is-cool-rank-preferences-v1';
