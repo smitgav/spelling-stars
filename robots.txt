@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://learning-is-fun.uk/sitemap.xml
