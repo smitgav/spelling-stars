@@ -19,8 +19,24 @@
  .game{padding:14px;min-height:0}.game .emoji{font-size:2rem}.game h2{font-size:1.2rem;margin:5px 0}.game p{font-size:.9rem;margin-bottom:9px}
 }
 @media(max-width:360px){header h1{font-size:1.35rem!important}header p{font-size:.72rem!important}}
+
+/* Second-pass mobile polish: remove oversized welcome copy and avoid title wrapping */
+@media(max-width:680px){
+ header{padding:17px 164px 18px 14px!important;min-height:91px!important;display:flex;flex-direction:column;justify-content:center}
+ header h1{max-width:none!important;font-size:clamp(1.18rem,4.8vw,1.65rem)!important;line-height:1.16!important;margin:0!important;white-space:normal}
+ header .desktop-welcome{display:none!important}
+ header p{max-width:none!important;font-size:.74rem!important;line-height:1.25!important;margin-top:5px!important}
+ body>.star-rank-card{top:8px!important;right:8px!important;width:145px!important}
+ .intro{font-size:1.14rem;margin:5px 0 9px}
+ .game{padding:12px!important;border-radius:16px!important;gap:0}
+ .game .emoji{font-size:1.65rem!important;line-height:1.2}
+ .game h2{font-size:1.15rem!important;margin:5px 0!important}
+ .game p{font-size:.85rem!important;line-height:1.3!important;margin-bottom:9px!important}
+ .game .play{padding:9px 13px;font-size:.9rem}
+}
+@media(max-width:390px){header{padding-right:156px!important}header h1{font-size:1.15rem!important}header p{font-size:.7rem!important}}
 </style></head><body>
-<header><span class="banner-doodle left" aria-hidden="true">📚</span><span class="banner-doodle right" aria-hidden="true">🚀</span><div class="sparkles" aria-hidden="true">⭐ 🌈 ✨</div><h1>Welcome to<br>School is Cool!</h1><p>Ready for a spelling adventure? Pick a game, have fun and collect stars as you learn!</p></header>
+<header><span class="banner-doodle left" aria-hidden="true">📚</span><span class="banner-doodle right" aria-hidden="true">🚀</span><div class="sparkles" aria-hidden="true">⭐ 🌈 ✨</div><h1><span class="desktop-welcome">Welcome to<br></span>School is Cool!</h1><p>Ready for a spelling adventure? Pick a game, have fun and collect stars as you learn!</p></header>
 <main class="wrap"><h2 class="intro">🎮 Choose your game</h2><div class="games">
 <article class="game"><div class="emoji" aria-hidden="true">🎧</div><h2>Listen &amp; Spell</h2><p>Hear a word, type your answer and see how many stars you can earn!</p><a class="play" href="listen-spell.html">▶ Play now</a></article>
 <article class="game yellow"><div class="emoji" aria-hidden="true">🧩</div><h2>Letter Builder</h2><p>Look at a word, remember it, then put the mixed-up letters in the right order.</p><a class="play" href="letter-builder.html">▶ Play now</a></article>
