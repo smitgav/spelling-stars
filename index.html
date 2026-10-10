@@ -35,6 +35,12 @@
  .game .play{padding:9px 13px;font-size:.9rem}
 }
 @media(max-width:390px){header{padding-right:156px!important}header h1{font-size:1.15rem!important}header p{font-size:.7rem!important}}
+
+/* Keep the compact mobile banner and rank badge visible while games scroll. */
+@media(max-width:680px){
+ body>header{position:sticky!important;top:0!important;z-index:20!important;isolation:isolate;box-shadow:0 5px 16px #2b174a30}
+ body>.star-rank-card{position:fixed!important;top:8px!important;right:8px!important;z-index:21!important;margin:0!important}
+}
 </style></head><body>
 <header><span class="banner-doodle left" aria-hidden="true">📚</span><span class="banner-doodle right" aria-hidden="true">🚀</span><div class="sparkles" aria-hidden="true">⭐ 🌈 ✨</div><h1><span class="desktop-welcome">Welcome to<br></span>School is Cool!</h1><p>Ready for a spelling adventure? Pick a game, have fun and collect stars as you learn!</p></header>
 <main class="wrap"><h2 class="intro">🎮 Choose your game</h2><div class="games">
