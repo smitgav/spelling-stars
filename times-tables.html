@@ -28,4 +28,4 @@ $("next").onclick=advance;$("again").onclick=()=>{$("resultsDialog").close();beg
 $("tableSelect").onchange=()=>{stopTimer();begin()};
 document.querySelectorAll(".choice").forEach(b=>b.onclick=()=>{limit=Number(b.dataset.limit);$("modeLabel").textContent=limit?limit+"-second challenge":"Relaxed mode — no time limit";$("modeDialog").close();begin()});
 $("modeDialog").addEventListener("cancel",e=>e.preventDefault());$("resultsDialog").addEventListener("cancel",e=>e.preventDefault());window.addEventListener("pagehide",stopTimer);$("modeDialog").showModal();
-</script><script src="stars.js?v=allpaths3"></script></body></html>
+</script><script src="stars.js?v=mobilefix4"></script></body></html>
