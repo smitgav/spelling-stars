@@ -12,7 +12,7 @@ async function fetchSpellingLists(){
  const result={};const failures=[];
  await Promise.all(SPELLING_LIST_FILES.map(async file=>{
   try{
-   const response=await fetch(file);
+   const response=await fetch(file,{cache:file==="lists/custom-lists.json"?"no-store":"default"});
    if(!response.ok)throw Error("HTTP "+response.status);
    const data=await response.json();
    if(data.lists&&typeof data.lists==="object"){for(const [name,words] of Object.entries(data.lists)){const clean=validWords(words);if(clean.length)result[name]=clean}}
